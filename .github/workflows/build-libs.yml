@@ -72,6 +72,7 @@ jobs:
       - name: cmake build
         run: |
           cmake --build build --config Release
+          ls -R
       - name: rename DLL
         run: |
           mv build/Release/portaudio_*.dll libportaudio${{ matrix.platform-suffix }}${{ matrix.asio }}.dll
