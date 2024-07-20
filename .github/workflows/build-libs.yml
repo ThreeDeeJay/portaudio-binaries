@@ -15,8 +15,8 @@ jobs:
             platform-suffix: 64bit
           - platform: Win32
             platform-suffix: 32bit
-    env:
-      LDFLAGS: "/Brepro"
+#    env:
+#      LDFLAGS: "/Brepro"
     steps:
       - name: cmake configure
         run: |
